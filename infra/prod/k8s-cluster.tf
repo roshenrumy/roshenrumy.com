@@ -1,5 +1,5 @@
 resource "digitalocean_kubernetes_cluster" "prod" {
-  name           = "personal-website-prod-cluster"
+  name           = "personal-website-cluster-prod"
   region         = "sgp1"
   version        = "1.32.2-do.1"
   vpc_uuid       = digitalocean_vpc.prod.id
