@@ -79,6 +79,10 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+### SSH ###
+# Ignore SSH keys
+github-ssh-keys/
+
 ### workspace ###
 # Ingore workspace file
 *.code-workspace

@@ -1,9 +1,9 @@
-name: Terraform Speculative Run
+name: Check for Infrastructure Changes
 
 on:
   pull_request:
     branches:
-      - main
+      - 4-setup-terraform-as-iac-with-cicd-workflow
     paths:
       - "infra/prod/**.tf"
 

@@ -18,3 +18,9 @@ resource "digitalocean_kubernetes_cluster" "prod" {
     start_time = "02:00"
   }
 }
+
+output "kubeconfig" {
+  value     = digitalocean_kubernetes_cluster.prod.kube_config.0.raw_config
+  sensitive = true
+
+}
