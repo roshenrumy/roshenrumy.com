@@ -1,5 +1,5 @@
 resource "digitalocean_kubernetes_cluster" "prod" {
-  name           = "personal-website-prod-cluster"
+  name           = "personal-website-cluster-prod"
   region         = "sgp1"
   version        = "1.32.2-do.1"
   vpc_uuid       = digitalocean_vpc.prod.id
@@ -9,7 +9,7 @@ resource "digitalocean_kubernetes_cluster" "prod" {
 
   node_pool {
     name       = "personal-website-prod-pool"
-    size       = "s-1vcpu-1gb"
+    size       = "s-1vcpu-2gb"
     node_count = 2
   }
 
@@ -17,4 +17,10 @@ resource "digitalocean_kubernetes_cluster" "prod" {
     day        = "sunday"
     start_time = "02:00"
   }
+}
+
+output "kubeconfig" {
+  value     = digitalocean_kubernetes_cluster.prod.kube_config.0.raw_config
+  sensitive = true
+
 }
