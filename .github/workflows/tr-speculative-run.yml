@@ -8,15 +8,16 @@ on:
       - "infra/prod/**.tf"
 
 env:
-  TF_CLOUD_ORGANIZATION: ${{ vars.TF_CLOUD_ORGANIZATION }}
-  TF_API_TOKEN: ${{ secrets.TF_API_TOKEN }}
-  TF_WORKSPACE: ${{ vars.TF_WORKSPACE }}
-  CONFIG_DIRECTORY: infra/prod
 
 jobs:
   terraform-speculative-run:
     runs-on: ubuntu-latest
     environment: prod
+    env:
+      TF_CLOUD_ORGANIZATION: ${{ vars.TF_CLOUD_ORGANIZATION }}
+      TF_API_TOKEN: ${{ secrets.TF_API_TOKEN }}
+      TF_WORKSPACE: ${{ vars.TF_WORKSPACE }}
+      CONFIG_DIRECTORY: infra/prod
     steps:
       - uses: actions/checkout@v3
 
