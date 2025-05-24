@@ -4,8 +4,6 @@ on:
   pull_request:
     branches:
       - 4-setup-terraform-as-iac-with-cicd-workflow
-    paths:
-      - "infra/prod/**.tf"
 
 jobs:
   terraform-speculative-run:

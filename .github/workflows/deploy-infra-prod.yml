@@ -41,13 +41,13 @@ jobs:
     needs: terraform-apply-run
     environment: prod
     env:
-      DO_PAT: ${{ secrets.DO_PAT }}
+      DO_ACCESS_TOKEN: ${{ secrets.DO_API_TOKEN }}
       CLUSTER_NAME: "personal-website-cluster-prod"
     steps:
       - uses: digitalocean/action-doctl@v2
         id: set-kubectl-config
         with:
-          token: ${{ secrets.DO_PAT }}
+          token: ${{ secrets.DO_ACCESS_TOKEN }}
           run: |
             set -euo pipefail
 
