@@ -4,9 +4,8 @@ metadata:
   name: postgres-persistent-volume-claim
   namespace: blog
 spec:
-  storageClassName: do-block-storage
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   resources:
     requests:
       storage: 1Gi
