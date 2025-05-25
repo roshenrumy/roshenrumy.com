@@ -88,7 +88,7 @@ github-ssh-keys/
 *.code-workspace
 
 
-### credentials ###
-*-credentials.txt
+### misc ###
+*.txt
 
 # End of https://www.toptal.com/developers/gitignore/api/rust,svelte,visualstudiocode
