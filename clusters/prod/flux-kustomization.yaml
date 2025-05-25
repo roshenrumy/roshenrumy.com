@@ -6,12 +6,12 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-  - name: crds
+    - name: crds
   interval: 5m0s
   path: ./k8s/overlays/prod
   prune: true
   sourceRef:
     kind: GitRepository
     name: roshenrumy-com
-  timeout: 2m0s
+  timeout: 20m0s
   wait: true
