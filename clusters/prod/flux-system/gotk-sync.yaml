@@ -8,7 +8,7 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: 7-bootstrap-flux-and-setup-continuous-delivery-for-k8s
+    branch: main
   secretRef:
     name: flux-system
   url: ssh://git@github.com/roshenrumy/roshenrumy.com
