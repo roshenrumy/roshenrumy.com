@@ -9,3 +9,5 @@ spec:
   ref:
     branch: main
   url: ssh://git@github.com/roshenrumy/roshenrumy.com
+  secretRef:
+    name: flux-git-ssh-key
