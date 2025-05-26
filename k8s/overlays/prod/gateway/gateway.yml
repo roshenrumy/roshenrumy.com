@@ -4,7 +4,7 @@ metadata:
   name: blog-gateway
   namespace: blog
   annotations: # This is the name of the ClusterIssuer created in the previous step
-    cert-manager.io/cluster-issuer: letsencrypt-staging
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
   gatewayClassName: nginx
   listeners:
