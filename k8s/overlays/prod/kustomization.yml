@@ -3,8 +3,8 @@ kind: Kustomization
 
 resources:
   - ../../base/resources/gateway-fabric
-  - ./cluster-issuer
-  - ./gateway
+  - cluster-issuer
+  - gateway
   - ../../base/resources/namespace
   - ../../base/resources/db
   - ../../base/resources/be
