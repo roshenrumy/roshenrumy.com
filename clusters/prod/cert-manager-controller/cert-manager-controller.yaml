@@ -34,15 +34,15 @@ spec:
   values:
     installCRDs: true
 ---
-apiVersion: controller.config.cert-manager.io/v1alpha1
-kind: ControllerConfiguration
+# apiVersion: controller.config.cert-manager.io/v1alpha1
+# kind: ControllerConfiguration
 
-metadata:
-  name: cert-manager
-  namespace: cert-manager
+# metadata:
+#   name: cert-manager
+#   namespace: cert-manager
 
-logging:
-  verbosity: 2
-  format: text
+# logging:
+#   verbosity: 2
+#   format: text
 
-enableGatewayAPI: true
+# enableGatewayAPI: true

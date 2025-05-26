@@ -10,7 +10,6 @@ spec:
   interval: 10m0s
   path: ./clusters/prod/cert-manager-controller
   prune: true
-  force: true
   sourceRef:
     kind: GitRepository
     name: roshenrumy-com
