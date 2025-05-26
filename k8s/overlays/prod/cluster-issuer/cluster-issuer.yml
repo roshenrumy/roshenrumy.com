@@ -14,5 +14,5 @@ spec:
           gatewayHTTPRoute:
             parentRefs: # This is the name of the Gateway that will be created in the next step
               - name: blog-gateway
-                namespace: default
+                namespace: blog
                 kind: Gateway
