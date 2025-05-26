@@ -6,8 +6,9 @@ metadata:
 spec:
   parentRefs:
     - name: blog-gateway
-  # hostnames:
-  #   - "fe.local"
+      sectionName: https
+  hostnames:
+    - "roshenrumy.com"
   rules:
     - matches:
         - path:
