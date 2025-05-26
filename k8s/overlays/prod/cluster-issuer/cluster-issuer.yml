@@ -12,7 +12,7 @@ spec:
     solvers:
       - http01:
           gatewayHTTPRoute:
-          parentRefs: # This is the name of the Gateway that will be created in the next step
-            - name: blog-gateway
-              namespace: default
-              kind: Gateway
+            parentRefs: # This is the name of the Gateway that will be created in the next step
+              - name: blog-gateway
+                namespace: default
+                kind: Gateway
